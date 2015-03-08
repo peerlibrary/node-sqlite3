@@ -52,7 +52,7 @@
     "engineStrict": true,
     "scripts": {
         "prepublish":"npm ls",
-        "install": "node-pre-gyp install --fallback-to-build",
+        "install": "./node_modules/.bin/node-pre-gyp install --fallback-to-build",
         "pretest": "node test/support/createdb.js",
         "test": "mocha -R spec --timeout 480000"
     },
